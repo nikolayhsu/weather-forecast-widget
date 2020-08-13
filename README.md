@@ -16,10 +16,6 @@ For live demo, visit https://weather-forecast-3fce5.web.app/
 * Google Places API - for looking up cities
 * OpenWeather API - for looking up weather data
 
-## Known issues
-
-* The open-source Typeahead component used in this test is not as stable. It sometimes does not display results properly. 
-
 ## Running Locally
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Please follow the instructions below, if running it locally.
