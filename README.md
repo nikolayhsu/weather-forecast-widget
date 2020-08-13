@@ -1,7 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Weather Forecast Widget for PWC
 
-## Available Scripts
+For live demo, visit https://weather-forecast-3fce5.web.app/
 
+## Features
+
+* Showing highest and lowest temperatures of 7 days
+* Fetching user's current location and looking up weather details
+* Default to Sydney if user's location is not available
+* A button to toggle metric and imperial
+* Allowing users' to look up for a city
+* Responsive for smaller screens
+
+## APIs Used
+
+* Google Places API - for looking up cities
+* OpenWeather API - for looking up weather data
+
+## Known issues
+
+* The open-source Typeahead component used in this test is not as stable. It sometimes does not display results properly. 
+
+## Running Locally
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Please follow the instructions below, if running it locally.
 In the project directory, you can run:
 
 ### `npm start`
@@ -27,18 +48,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
