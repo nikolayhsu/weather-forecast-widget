@@ -38,7 +38,9 @@ export class DailyWeatherWidget extends React.Component<DailyWeatherWidgetProps>
       <div className='daily-weather-widget-container'>
         <div className='day-of-week'>{this.dayOfWeek}</div>
         <img src={this.imageUrl} alt={this.props.weatherDetails.weather[0].description}></img>
-        <div>{getTemperature(max, unit)}&nbsp;&nbsp;<span className='min-temperature'>{getTemperature(min, unit)}</span></div>
+        <div className='tempaterure-info'>
+          {getTemperature(max, unit)}&nbsp;&nbsp;<span className='min-temperature'>{getTemperature(min, unit)}</span>
+        </div>
       </div>
     );
   }

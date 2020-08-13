@@ -19,8 +19,6 @@
     "moment": "^2.27.0",
     "moment-timezone": "^0.5.31",
     "react": "^16.13.1",
-    "react-autosuggest": "^10.0.2",
-    "react-bootstrap-typeahead": "^5.1.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.2",
     "typescript": "^3.7.5"

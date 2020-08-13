@@ -9,7 +9,7 @@ import { CurrentWeatherTemperature } from './CurrentWeatherTemperature/CurrentWe
 import { OtherWeatherDetails } from './OtherWeatherDetails/OtherWeatherDetails';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { computed } from 'mobx';
-import { CitySearchTypeahead } from './CitySearchTypeahead/CitySearchTypeahead';
+import { Typeahead } from './Typeahead/Typeahead';
 
 export interface WeatherForecastWidgetProps {
   store: WeatherForecastStore;
@@ -36,7 +36,7 @@ export class WeatherForecastWidget extends React.Component<WeatherForecastWidget
     }
 
     return <div className='weather-forecast-widget'>
-      <CitySearchTypeahead store={this.props.store}></CitySearchTypeahead>
+      <Typeahead store={this.props.store}></Typeahead>
       <h1>{this.props.store.cityName}</h1>
       <div>{this.localDateTime}</div>
       <div>{data.current.weather[0].main}</div>
