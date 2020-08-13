@@ -1,0 +1,16 @@
+.other-weather-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 720px) {
+  .other-weather-details {
+    display: block;
+    > div {
+      width: 50%;
+      float: left;
+    }
+  }
+}

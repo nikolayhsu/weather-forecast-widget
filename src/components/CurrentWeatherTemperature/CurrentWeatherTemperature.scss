@@ -1,0 +1,19 @@
+.current-weather-temperature {
+  display: flex;
+  width: 100%;
+
+  .temperature {
+    line-height: 100px;
+    font-size: 42px;
+  }
+
+  .degree-symbol {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .current-weather-temperature {
+    justify-content: flex-start;
+  }
+}

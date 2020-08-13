@@ -7,10 +7,20 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "@types/jest": "^24.9.1",
+    "@types/moment-timezone": "^0.5.13",
     "@types/node": "^12.12.54",
     "@types/react": "^16.9.46",
     "@types/react-dom": "^16.9.8",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.2",
+    "googleapis": "^59.0.0",
+    "mobx": "^5.15.5",
+    "mobx-react": "^6.2.5",
+    "moment": "^2.27.0",
+    "moment-timezone": "^0.5.31",
     "react": "^16.13.1",
+    "react-autosuggest": "^10.0.2",
+    "react-bootstrap-typeahead": "^5.1.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.2",
     "typescript": "^3.7.5"
@@ -35,5 +45,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.10.5",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
+    "node-sass": "^4.14.1"
   }
 }

@@ -1,0 +1,41 @@
+.weather-forecast-widget {
+  background-color: lightskyblue;
+  max-width: 740px;
+  padding: 20px;
+  position: relative;
+
+  h1 {
+    margin: 20px 0 0 0;
+  }
+
+  .change-unit-button {
+    position: absolute;
+    right: 20px;
+    top: 86px;
+  }
+
+  .daily-weather-container {
+    display: flex;
+  }
+
+  .current-weather-details {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .weather-forecast-widget {
+    .daily-weather-container {
+      display: block;
+    }
+
+    .current-weather-details {
+      display: block;
+    }
+
+    .change-unit-button {
+      position: unset;
+      margin: 20px 0 0 0;
+    }
+  }
+}
