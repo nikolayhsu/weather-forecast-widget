@@ -1,4 +1,4 @@
-import  React from 'react';
+import React from 'react';
 import './Typeahead.scss';
 import { observer } from 'mobx-react';
 import { observable } from 'mobx';
@@ -83,13 +83,13 @@ export class Typeahead extends React.Component<TypeaheadProps> {
         ref={this.inputRef}
         onChange={this.handleInput.bind(this)}
         onFocus={this.handleFocus.bind(this)}
-        onBlur={this.handleBlur.bind(this)}/>
+        onBlur={this.handleBlur.bind(this)} />
       <div className="input-group-append">
         <button className="btn btn-secondary" type="button"
           onClick={this.resetQuery.bind(this)}
           disabled={!this.query}>Clear</button>
       </div>
-      <div className='suggestion-dropdown'>{ this.renderSuggestions() }</div>
+      <div className='suggestion-dropdown'>{this.renderSuggestions()}</div>
     </div>;
   }
 }

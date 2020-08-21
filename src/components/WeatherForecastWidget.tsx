@@ -7,7 +7,6 @@ import { DailyWeatherWidget } from './DailyWeatherWidget/DailyWeatherWidget';
 import './WeatherForecastWidget.scss';
 import { CurrentWeatherTemperature } from './CurrentWeatherTemperature/CurrentWeatherTemperature';
 import { OtherWeatherDetails } from './OtherWeatherDetails/OtherWeatherDetails';
-import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { computed } from 'mobx';
 import { Typeahead } from './Typeahead/Typeahead';
 
@@ -46,7 +45,7 @@ export class WeatherForecastWidget extends React.Component<WeatherForecastWidget
         <OtherWeatherDetails weatherDetails={data.current} unit={unit}>
         </OtherWeatherDetails>
       </div>
-      <button className="btn btn-primary change-unit-button" onClick={() => this.props.store.toggleUnit()}>Metric/Imperial</button>
+      <button className='btn btn-primary change-unit-button' onClick={() => this.props.store.toggleUnit()}>Metric/Imperial</button>
       <div className='daily-weather-container'>
         {
           data.daily.map((weather, index) => {

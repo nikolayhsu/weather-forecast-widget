@@ -41,7 +41,7 @@ export class WeatherForecastStore {
       this.lon = SYDNEY_LON;
       this.cityName = 'Sydney';
       this.load();
-    }, { timeout: 3000 });
+    }, { timeout: 3000, enableHighAccuracy: false });
   }
 
   @action
