@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { CurrentWeatherTemperature } from './CurrentWeatherTemperature';
-import { Units } from '../../models/Units';
-import { WeatherForecastDetails } from '../../models/WeatherForecastResponse';
+import { Units } from '../models/Units';
+import { WeatherForecastDetails } from '../models/WeatherForecastResponse';
 
 const data: WeatherForecastDetails = {
   dt: 1597277311,

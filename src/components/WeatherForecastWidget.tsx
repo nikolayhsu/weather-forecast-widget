@@ -3,12 +3,12 @@ import { WeatherForecastStore } from '../stores/WeatherForecastStore';
 import { observer } from 'mobx-react';
 import moment from 'moment';
 import 'moment-timezone';
-import { DailyWeatherWidget } from './DailyWeatherWidget/DailyWeatherWidget';
+import { DailyWeatherWidget } from './DailyWeatherWidget';
 import './WeatherForecastWidget.scss';
-import { CurrentWeatherTemperature } from './CurrentWeatherTemperature/CurrentWeatherTemperature';
-import { OtherWeatherDetails } from './OtherWeatherDetails/OtherWeatherDetails';
+import { CurrentWeatherTemperature } from './CurrentWeatherTemperature';
+import { OtherWeatherDetails } from './OtherWeatherDetails';
 import { computed } from 'mobx';
-import { Typeahead } from './Typeahead/Typeahead';
+import { Typeahead } from './Typeahead';
 
 export interface WeatherForecastWidgetProps {
   store: WeatherForecastStore;
@@ -35,15 +35,13 @@ export class WeatherForecastWidget extends React.Component<WeatherForecastWidget
     }
 
     return <div className='weather-forecast-widget'>
-      <Typeahead store={this.props.store}></Typeahead>
+      <Typeahead store={this.props.store} />
       <h1>{this.props.store.cityName}</h1>
       <div>{this.localDateTime}</div>
       <div>{data.current.weather[0].main}</div>
       <div className='current-weather-details'>
-        <CurrentWeatherTemperature weatherDetails={data.current} unit={unit}>
-        </CurrentWeatherTemperature>
-        <OtherWeatherDetails weatherDetails={data.current} unit={unit}>
-        </OtherWeatherDetails>
+        <CurrentWeatherTemperature weatherDetails={data.current} unit={unit} />
+        <OtherWeatherDetails weatherDetails={data.current} unit={unit} />
       </div>
       <button className='btn btn-primary change-unit-button' onClick={() => this.props.store.toggleUnit()}>Metric/Imperial</button>
       <div className='daily-weather-container'>
